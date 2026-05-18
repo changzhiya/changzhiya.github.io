@@ -161,3 +161,21 @@
   border-top: 1px solid var(--vp-c-divider);
   padding: 2rem 0;
 }
+
+/* ===== Page Layout — give content breathing room ===== */
+.VPDoc .content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.VPDoc .content-container {
+  max-width: 720px;
+}
+
+/* On wider screens, push content slightly right for better visual balance */
+@media (min-width: 960px) {
+  .VPDoc .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

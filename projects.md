@@ -12,18 +12,6 @@ const projects = [
     tech: ['Python', 'PyTorch', 'CLIP', 'Computer Vision', 'Streamlit'],
     github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
   },
-  {
-    name: 'RAG 阅读助手',
-    desc: '基于 RAG 的微信小程序阅读助手，结合 DeepSeek 大语言模型实现智能书籍对话。后端 Java Spring Boot + DeepSeek API，前端微信小程序含聊天气泡组件。',
-    tech: ['Java', 'Spring Boot', 'WeChat Mini Program', 'RAG', 'LLM'],
-    github: 'https://github.com/changzhiya/RAG_reading_wechat',
-  },
-  {
-    name: 'MetaStudy',
-    desc: '基于 Spring Boot 的元学习管理系统，集成 Knife4j API 文档。',
-    tech: ['Java', 'Spring Boot'],
-    github: 'https://github.com/changzhiya/MetaStudy',
-  },
 ]
 </script>
 
@@ -44,7 +32,8 @@ const projects = [
 <style scoped>
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
+  max-width: 640px;
   gap: 1.25rem;
   margin-top: 1.5rem;
 }

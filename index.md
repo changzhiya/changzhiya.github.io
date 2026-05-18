@@ -34,12 +34,6 @@ const projects = [
     tags: ['Python', 'PyTorch', 'CLIP', 'Computer Vision'],
     github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
   },
-  {
-    title: 'RAG 阅读助手',
-    desc: '基于 RAG 的微信小程序阅读助手，结合 DeepSeek 大语言模型实现智能书籍对话。',
-    tags: ['Java', 'Spring Boot', 'WeChat Mini Program', 'RAG'],
-    github: 'https://github.com/changzhiya/RAG_reading_wechat',
-  },
 ]
 </script>
 
@@ -101,7 +95,8 @@ const projects = [
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
+  max-width: 640px;
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
