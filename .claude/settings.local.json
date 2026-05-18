@@ -13,7 +13,14 @@
       "Bash(gh auth *)",
       "Bash(gh repo *)",
       "WebSearch",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(curl -s https://changzhiya.github.io)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://changzhiya.github.io/assets/css/style.css\")",
+      "Bash(curl -s -I \"https://changzhiya.github.io/assets/css/style.css\")",
+      "Bash(curl -s https://changzhiya.github.io/about.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://changzhiya.github.io/avatar.jpg)",
+      "Bash(gh run *)",
+      "Bash(curl -s https://changzhiya.github.io/projects.html)"
     ]
   },
   "enabledPlugins": {

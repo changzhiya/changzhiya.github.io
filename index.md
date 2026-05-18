@@ -25,10 +25,6 @@ hero:
   <a href="mailto:15137091819@163.com" class="social-link">邮箱：15137091819@163.com</a>
 </div>
 
-<div class="scroll-hint">
-  <span>&darr; 向下滚动</span>
-</div>
-
 <script setup>
 const projects = [
   {
@@ -101,15 +97,6 @@ const projects = [
 
 .social-sep {
   color: var(--vp-c-divider);
-}
-
-.scroll-hint {
-  text-align: center;
-  margin: 2.5rem 0 4rem;
-  font-size: 0.78rem;
-  color: var(--vp-c-text-3);
-  letter-spacing: 0.05em;
-  opacity: 0.45;
 }
 
 .project-grid {
