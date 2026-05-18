@@ -97,7 +97,7 @@ layout: page
 }
 
 .about-lead p {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 300;
   line-height: 2;
   color: var(--vp-c-text-1);

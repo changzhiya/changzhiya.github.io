@@ -164,20 +164,21 @@
 
 /* ===== Page Layout — give content breathing room ===== */
 /* layout: page 渲染为 .VPPage，不是 .VPDoc */
+/* 与首页 VPHome 内容区对齐：左侧充裕留白，内容宽度受限 */
 .VPPage {
-  padding: 2rem 1.5rem 4rem 2rem;
-  max-width: 780px;
+  padding: 2rem 2rem 4rem 3rem;
+  max-width: 760px;
 }
 
 @media (min-width: 768px) {
   .VPPage {
-    padding: 2rem 2rem 4rem 3rem;
+    padding: 2rem 2.5rem 4rem 4.5rem;
   }
 }
 
 @media (min-width: 960px) {
   .VPPage {
-    padding: 2rem 2rem 4rem 4rem;
+    padding: 2rem 2rem 4rem 6rem;
   }
 }
 
