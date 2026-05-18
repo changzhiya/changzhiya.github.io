@@ -17,9 +17,9 @@ hero:
 ---
 
 <div class="hero-socials">
-  <a href="https://github.com/" target="_blank" class="social-link">GitHub</a>
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
   <span class="social-sep">·</span>
-  <a href="https://x.com/" target="_blank" class="social-link">X</a>
+  <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-link">X</a>
   <span class="social-sep">·</span>
   <a href="mailto:hello@example.com" class="social-link">邮箱</a>
 </div>
@@ -48,13 +48,13 @@ const projects = [
 ## 精选项目
 
 <div class="project-grid">
-  <div v-for="p in projects" class="project-card">
+  <div v-for="p in projects" :key="p.title" class="project-card">
     <h3>{{ p.title }}</h3>
     <p>{{ p.desc }}</p>
     <div class="tags">
-      <span v-for="t in p.tags" class="tag">{{ t }}</span>
+      <span v-for="t in p.tags" :key="t" class="tag">{{ t }}</span>
     </div>
-    <a :href="p.github" target="_blank">GitHub</a>
+    <a :href="p.github" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
 </div>
 
