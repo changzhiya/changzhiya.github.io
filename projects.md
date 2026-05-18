@@ -15,21 +15,24 @@ const projects = [
     desc: '文本引导指代图像分割系统，基于 PyTorch 与 OpenAI CLIP，支持 RefCOCO 数据集，提供训练/评估/可视化及 Streamlit 交互推理。',
     tech: ['Python', 'PyTorch', 'CLIP', 'Computer Vision', 'Streamlit'],
     github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
-    emoji: '🔬',
   },
   {
     name: '记账 — 本地 Android 记账 App',
     desc: '温馨可爱的纯本地记账应用，支持手动记账、微信/支付宝通知自动抓取、分类统计、月度预算、手账风格主题切换及小金库功能。',
     tech: ['Kotlin', 'Android', 'Jetpack Compose'],
     github: 'https://github.com/changzhiya/changzhi-expense-tracker',
-    emoji: '📒',
   },
 ]
 </script>
 
 <div class="project-list">
   <div v-for="p in projects" :key="p.name" class="project-block">
-    <div class="proj-emoji">{{ p.emoji }}</div>
+    <div class="proj-emoji">
+      <!-- microscope icon -->
+      <svg v-if="p.name.includes('RIS')" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12"/><path d="M12 3v18"/><circle cx="12" cy="9" r="5"/><path d="M8 15c-2.21 0-4 1.79-4 4v1h16v-1c0-2.21-1.79-4-4-4"/></svg>
+      <!-- book icon -->
+      <svg v-else viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    </div>
     <div class="proj-body">
       <h2>{{ p.name }}</h2>
       <p>{{ p.desc }}</p>

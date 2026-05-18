@@ -83,14 +83,20 @@ const projects = [
   font-size: 0.85rem;
   color: var(--vp-c-text-3);
   text-decoration: none;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0.25rem;
   border-bottom: 1px solid transparent;
-  transition: all 0.2s;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .social-link:hover {
   color: var(--vp-c-text-1);
   border-bottom-color: var(--vp-c-text-1);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 
 .social-sep {
@@ -103,13 +109,7 @@ const projects = [
   font-size: 0.78rem;
   color: var(--vp-c-text-3);
   letter-spacing: 0.05em;
-  opacity: 0.5;
-  animation: pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.7; }
+  opacity: 0.45;
 }
 
 .project-grid {
@@ -194,6 +194,12 @@ const projects = [
 .project-card a:hover {
   color: var(--vp-c-text-1);
   border-bottom-color: var(--vp-c-text-1);
+}
+
+.project-card a:focus-visible {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .section-ornament {

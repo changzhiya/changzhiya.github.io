@@ -12,10 +12,12 @@
       "Bash(gh api *)",
       "Bash(gh auth *)",
       "Bash(gh repo *)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(python *)"
     ]
   },
   "enabledPlugins": {
-    "superpowers@superpowers-marketplace": true
+    "superpowers@superpowers-marketplace": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true
   }
 }

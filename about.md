@@ -148,6 +148,12 @@ layout: page
   opacity: 0.5;
 }
 
+.stack-card:focus-within {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .stack-icon {
   font-size: 1.25rem;
   color: var(--vp-c-text-2);
@@ -265,6 +271,12 @@ layout: page
   box-shadow: var(--vp-shadow-1);
   color: var(--vp-c-text-1);
   transform: translateY(-1px);
+}
+
+.contact-item:focus-visible {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .contact-icon-box {
