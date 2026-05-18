@@ -45,19 +45,40 @@ const projects = [
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .project-card {
-  border: 1px solid var(--vp-c-bg-soft);
-  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
   padding: 1.5rem;
-  transition: border-color 0.2s;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4a4a4a 0%, #8a8a8a 100%);
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
 .project-card:hover {
-  border-color: var(--vp-c-brand);
+  border-color: var(--vp-c-text-3);
+  box-shadow: var(--vp-shadow-2);
+  transform: translateY(-2px);
+}
+
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .project-card h2 {
@@ -65,42 +86,51 @@ const projects = [
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
+  padding: 0;
+  color: var(--vp-c-text-1);
 }
 
 .project-card p {
   margin: 0 0 1rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--vp-c-text-2);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .tags {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
 
 .tag {
-  font-size: 0.75rem;
-  padding: 0.15rem 0.6rem;
-  border-radius: 4px;
-  background: var(--vp-c-bg-soft);
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 5px;
+  background: var(--vp-c-bg-mute);
   color: var(--vp-c-text-2);
+  font-weight: 450;
+  letter-spacing: 0.02em;
 }
 
 .links {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .link {
-  font-size: 0.85rem;
-  color: var(--vp-c-brand);
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
   text-decoration: none;
+  border-bottom: 1px solid var(--vp-c-divider);
+  transition: all 0.2s;
+  padding-bottom: 0.1rem;
 }
 
 .link:hover {
-  text-decoration: underline;
+  color: var(--vp-c-text-1);
+  border-bottom-color: var(--vp-c-text-1);
+  text-decoration: none;
 }
 </style>

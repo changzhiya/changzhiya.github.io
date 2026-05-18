@@ -112,23 +112,25 @@ layout: page
 }
 
 .tag {
-  font-size: 0.8rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  background: var(--vp-c-bg-soft);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 5px;
+  background: var(--vp-c-bg-mute);
   color: var(--vp-c-text-2);
+  font-weight: 450;
+  letter-spacing: 0.02em;
 }
 
 .timeline {
   position: relative;
-  padding-left: 1.5rem;
-  border-left: 2px solid var(--vp-c-bg-soft);
+  padding-left: 1.75rem;
+  border-left: 1.5px solid var(--vp-c-divider);
   margin-bottom: 3rem;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .timeline-item:last-child {
@@ -137,29 +139,33 @@ layout: page
 
 .timeline-dot {
   position: absolute;
-  left: -1.65rem;
-  top: 0.4rem;
-  width: 10px;
-  height: 10px;
+  left: -1.835rem;
+  top: 0.35rem;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: var(--vp-c-brand);
+  background: var(--vp-c-bg);
+  border: 2px solid var(--vp-c-text-2);
 }
 
 .timeline-content .time {
-  font-size: 0.8rem;
-  color: var(--vp-c-text-2);
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  letter-spacing: 0.03em;
 }
 
 .timeline-content h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  margin: 0.25rem 0;
+  margin: 0.2rem 0 0.15rem;
+  color: var(--vp-c-text-1);
 }
 
 .timeline-content p {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--vp-c-text-2);
   margin: 0;
+  line-height: 1.6;
 }
 
 .contact-links {
@@ -170,12 +176,16 @@ layout: page
 }
 
 .contact-links a {
-  color: var(--vp-c-brand);
+  color: var(--vp-c-text-2);
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+  color: var(--vp-c-text-1);
+  border-bottom-color: var(--vp-c-text-1);
+  text-decoration: none;
 }
 
 .contact-links .sep {

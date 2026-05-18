@@ -5,7 +5,7 @@ hero:
   name: "changzhiya"
   text: "全栈开发者，关注 CV/NLP 与 LLM 应用。"
   image:
-    src: /avatar.svg
+    src: /avatar.jpg
     alt: 头像
   actions:
     - theme: brand
@@ -60,20 +60,24 @@ const projects = [
 .hero-socials {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
+  gap: 0.75rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .social-link {
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
+  font-size: 0.85rem;
+  color: var(--vp-c-text-3);
   text-decoration: none;
   transition: color 0.2s;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
 }
 
 .social-link:hover {
-  color: var(--vp-c-brand);
+  color: var(--vp-c-text-1);
+  border-bottom-color: var(--vp-c-text-1);
 }
 
 .social-sep {
@@ -82,57 +86,100 @@ const projects = [
 
 .scroll-hint {
   text-align: center;
-  margin: 2rem 0 3rem;
-  font-size: 0.8rem;
+  margin: 2.5rem 0 4rem;
+  font-size: 0.78rem;
   color: var(--vp-c-text-3);
-  opacity: 0.6;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .project-card {
-  border: 1px solid var(--vp-c-bg-soft);
-  border-radius: 8px;
-  padding: 1.25rem;
-  transition: border-color 0.2s;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4a4a4a 0%, #8a8a8a 100%);
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
 .project-card:hover {
-  border-color: var(--vp-c-brand);
+  border-color: var(--vp-c-text-3);
+  box-shadow: var(--vp-shadow-2);
+  transform: translateY(-2px);
+}
+
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .project-card h3 {
   margin: 0 0 0.5rem;
   font-weight: 500;
+  font-size: 1rem;
+  color: var(--vp-c-text-1);
 }
 
 .project-card p {
-  margin: 0 0 0.75rem;
-  font-size: 0.9rem;
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
   color: var(--vp-c-text-2);
+  line-height: 1.7;
 }
 
 .tags {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .tag {
-  font-size: 0.75rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  background: var(--vp-c-bg-soft);
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 5px;
+  background: var(--vp-c-bg-mute);
   color: var(--vp-c-text-2);
+  font-weight: 450;
+  letter-spacing: 0.02em;
 }
 
 .project-card a {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--vp-c-divider);
+  transition: all 0.2s;
+  padding-bottom: 0.1rem;
+}
+
+.project-card a:hover {
+  color: var(--vp-c-text-1);
+  border-bottom-color: var(--vp-c-text-1);
 }
 </style>

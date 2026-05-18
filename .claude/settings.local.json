@@ -4,7 +4,14 @@
       "Skill(superpowers:brainstorming)",
       "Bash(npm install *)",
       "Bash(git *)",
-      "Bash(npx vitepress *)"
+      "Bash(npx vitepress *)",
+      "Bash(curl -s https://api.github.com/users/changzhiya)",
+      "Bash(curl -s https://api.github.com/users/changzhiya/repos?sort=stars\\\\&per_page=20)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -v --connect-timeout 10 https://api.github.com/users/changzhiya)",
+      "Bash(gh api *)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)"
     ]
   },
   "enabledPlugins": {
