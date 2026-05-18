@@ -74,7 +74,7 @@ layout: page
 <div class="contact-links">
   <a href="https://github.com/changzhiya" target="_blank" rel="noopener noreferrer">GitHub</a>
   <span class="sep">/</span>
-  <a href="mailto:zbz2040103949@outlook.com">邮箱</a>
+  <a href="mailto:15137091819@163.com">邮箱</a>
 </div>
 
 <style scoped>
