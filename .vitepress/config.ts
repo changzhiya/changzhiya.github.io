@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '我的主页',
+  title: 'changzhiya',
   description: '个人主页',
 
   srcExclude: ['CLAUDE.md', 'docs/**'],
@@ -15,7 +15,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' },
+      { icon: 'github', link: 'https://github.com/changzhiya' },
     ],
   },
 })

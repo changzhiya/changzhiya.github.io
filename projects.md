@@ -7,30 +7,22 @@ layout: page
 <script setup>
 const projects = [
   {
-    name: '项目 Alpha',
-    desc: '一个高效完成工作的工具。',
-    tech: ['TypeScript', 'Vue 3', 'Vite'],
-    github: 'https://github.com/',
-    demo: 'https://example.com',
+    name: 'RIS — 指代图像分割系统',
+    desc: '文本引导指代图像分割系统，基于 PyTorch 与 OpenAI CLIP，支持 RefCOCO 数据集，提供训练/评估/可视化及 Streamlit 交互推理。',
+    tech: ['Python', 'PyTorch', 'CLIP', 'Computer Vision', 'Streamlit'],
+    github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
   },
   {
-    name: '项目 Beta',
-    desc: '生成式设计与创意编程的实验项目。',
-    tech: ['Python', 'Stable Diffusion', 'ComfyUI'],
-    github: 'https://github.com/',
+    name: 'RAG 阅读助手',
+    desc: '基于 RAG 的微信小程序阅读助手，结合 DeepSeek 大语言模型实现智能书籍对话。后端 Java Spring Boot + DeepSeek API，前端微信小程序含聊天气泡组件。',
+    tech: ['Java', 'Spring Boot', 'WeChat Mini Program', 'RAG', 'LLM'],
+    github: 'https://github.com/changzhiya/RAG_reading_wechat',
   },
   {
-    name: '项目 Gamma',
-    desc: '自动化重复工作流的 CLI 工具。',
-    tech: ['Rust', 'CLI'],
-    github: 'https://github.com/',
-    demo: 'https://example.com',
-  },
-  {
-    name: '项目 Delta',
-    desc: '数据探索的可视化仪表盘。',
-    tech: ['React', 'D3.js', 'Node.js'],
-    github: 'https://github.com/',
+    name: 'MetaStudy',
+    desc: '基于 Spring Boot 的元学习管理系统，集成 Knife4j API 文档。',
+    tech: ['Java', 'Spring Boot'],
+    github: 'https://github.com/changzhiya/MetaStudy',
   },
 ]
 </script>

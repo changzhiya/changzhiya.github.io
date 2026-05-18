@@ -5,7 +5,7 @@ layout: page
 # 关于我
 
 <div class="about-intro">
-  <p>你好！我是一名热爱构建工具的软件开发者。我享受全栈开发——从 CLI 工具到 Web 前端——并且非常在意简洁的设计和良好的开发者体验。</p>
+  <p>你好！我是一名全栈开发者，专注于计算机视觉、自然语言处理和大语言模型应用。技术栈涵盖 Java 后端开发（Spring Boot）、Python 深度学习（PyTorch）以及微信小程序前端。</p>
 </div>
 
 ## 技术栈
@@ -14,28 +14,28 @@ layout: page
   <div class="tech-group">
     <h3>语言</h3>
     <div class="tag-list">
-      <span class="tag">TypeScript</span>
-      <span class="tag">JavaScript</span>
+      <span class="tag">Java</span>
       <span class="tag">Python</span>
-      <span class="tag">Rust</span>
+      <span class="tag">JavaScript</span>
     </div>
   </div>
   <div class="tech-group">
-    <h3>前端</h3>
+    <h3>框架</h3>
     <div class="tag-list">
+      <span class="tag">Spring Boot</span>
+      <span class="tag">PyTorch</span>
       <span class="tag">Vue</span>
-      <span class="tag">React</span>
-      <span class="tag">Vite</span>
-      <span class="tag">Tailwind CSS</span>
+      <span class="tag">微信小程序</span>
     </div>
   </div>
   <div class="tech-group">
     <h3>工具</h3>
     <div class="tag-list">
       <span class="tag">Git</span>
+      <span class="tag">DeepSeek API</span>
+      <span class="tag">CLIP</span>
+      <span class="tag">Streamlit</span>
       <span class="tag">Docker</span>
-      <span class="tag">VS Code</span>
-      <span class="tag">Linux</span>
     </div>
   </div>
 </div>
@@ -72,11 +72,9 @@ layout: page
 ## 联系方式
 
 <div class="contact-links">
-  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="https://github.com/changzhiya" target="_blank" rel="noopener noreferrer">GitHub</a>
   <span class="sep">/</span>
-  <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-  <span class="sep">/</span>
-  <a href="mailto:hello@example.com">邮箱</a>
+  <a href="mailto:zbz2040103949@outlook.com">邮箱</a>
 </div>
 
 <style scoped>

@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "你的名字"
-  text: "一句话自我介绍。"
+  name: "changzhiya"
+  text: "全栈开发者，关注 CV/NLP 与 LLM 应用。"
   image:
     src: /avatar.svg
     alt: 头像
@@ -17,11 +17,9 @@ hero:
 ---
 
 <div class="hero-socials">
-  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+  <a href="https://github.com/changzhiya" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
   <span class="social-sep">·</span>
-  <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-link">X</a>
-  <span class="social-sep">·</span>
-  <a href="mailto:hello@example.com" class="social-link">邮箱</a>
+  <a href="mailto:zbz2040103949@outlook.com" class="social-link">邮箱</a>
 </div>
 
 <div class="scroll-hint">
@@ -31,16 +29,16 @@ hero:
 <script setup>
 const projects = [
   {
-    title: '项目 Alpha',
-    desc: '一个高效完成工作的工具。',
-    tags: ['TypeScript', 'Vue'],
-    github: 'https://github.com/',
+    title: 'RIS — 指代图像分割系统',
+    desc: '文本引导指代图像分割系统，基于 PyTorch 与 OpenAI CLIP，支持 RefCOCO 数据集，提供训练/评估/可视化及 Streamlit 交互推理。',
+    tags: ['Python', 'PyTorch', 'CLIP', 'Computer Vision'],
+    github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
   },
   {
-    title: '项目 Beta',
-    desc: '生成式设计的实验性项目。',
-    tags: ['Python', 'AI'],
-    github: 'https://github.com/',
+    title: 'RAG 阅读助手',
+    desc: '基于 RAG 的微信小程序阅读助手，结合 DeepSeek 大语言模型实现智能书籍对话。',
+    tags: ['Java', 'Spring Boot', 'WeChat Mini Program', 'RAG'],
+    github: 'https://github.com/changzhiya/RAG_reading_wechat',
   },
 ]
 </script>
