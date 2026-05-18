@@ -4,15 +4,24 @@ layout: page
 
 # 关于我
 
-<div class="about-lead">
-  <p>你好！我是一名全栈开发者，专注于计算机视觉、自然语言处理和大语言模型应用。技术栈涵盖 Java 后端开发（Spring Boot）、Python 深度学习（PyTorch）以及微信小程序前端。</p>
+<div class="about-hero">
+  <div class="about-avatar">
+    <img src="/avatar.jpg" alt="头像" />
+  </div>
+  <div class="about-bio">
+    <p>你好！我是一名全栈开发者，专注于计算机视觉、自然语言处理和大语言模型应用。技术栈涵盖 Java 后端开发（Spring Boot）、Python 深度学习（PyTorch）以及微信小程序前端。</p>
+  </div>
 </div>
+
+<div class="section-sep"><span></span></div>
 
 ## 技术栈
 
 <div class="stack-grid">
-  <div class="stack-card">
-    <div class="stack-icon">&lt;/&gt;</div>
+  <div class="stack-card card-lang">
+    <div class="stack-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    </div>
     <h3>语言</h3>
     <div class="stack-tags">
       <span class="tag">Java</span>
@@ -21,8 +30,10 @@ layout: page
       <span class="tag">Kotlin</span>
     </div>
   </div>
-  <div class="stack-card">
-    <div class="stack-icon">&#9636;</div>
+  <div class="stack-card card-fw">
+    <div class="stack-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    </div>
     <h3>框架</h3>
     <div class="stack-tags">
       <span class="tag">Spring Boot</span>
@@ -31,8 +42,10 @@ layout: page
       <span class="tag">Jetpack Compose</span>
     </div>
   </div>
-  <div class="stack-card">
-    <div class="stack-icon">&#9881;</div>
+  <div class="stack-card card-tool">
+    <div class="stack-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/></svg>
+    </div>
     <h3>工具</h3>
     <div class="stack-tags">
       <span class="tag">Git</span>
@@ -44,10 +57,12 @@ layout: page
   </div>
 </div>
 
+<div class="section-sep"><span></span></div>
+
 ## 经历
 
 <div class="timeline">
-  <div class="tl-item">
+  <div class="tl-item current">
     <div class="tl-marker"><span class="tl-dot"></span></div>
     <div class="tl-body">
       <span class="tl-date">2024 — 至今</span>
@@ -73,7 +88,11 @@ layout: page
   </div>
 </div>
 
+<div class="section-sep"><span></span></div>
+
 ## 联系
+
+<p class="contact-hint">欢迎技术交流与合作。</p>
 
 <div class="contact-card">
   <a href="https://github.com/changzhiya" target="_blank" rel="noopener noreferrer" class="contact-item">
@@ -91,17 +110,66 @@ layout: page
 </div>
 
 <style scoped>
-/* ===== Lead ===== */
-.about-lead {
-  margin: 0 0 4rem;
+/* ===== Hero — avatar + bio ===== */
+.about-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 0.5rem 0 0;
 }
 
-.about-lead p {
+.about-avatar {
+  flex-shrink: 0;
+}
+
+.about-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--vp-shadow-2);
+}
+
+.about-bio {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-bio p {
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 2;
   color: var(--vp-c-text-1);
-  max-width: 34rem;
+  margin: 0;
+}
+
+/* ===== Section Separator ===== */
+.section-sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0;
+  opacity: 0.2;
+}
+
+.section-sep span {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--vp-c-text-2);
+  position: relative;
+}
+
+.section-sep span::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--vp-c-text-2);
 }
 
 /* ===== Stack Grid ===== */
@@ -109,21 +177,36 @@ layout: page
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  margin: 0 0 4rem;
+  margin: 0;
 }
 
 .stack-card {
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.25rem;
   transition: all 0.25s ease;
-}
-
-.stack-card {
   position: relative;
+  overflow: hidden;
 }
 
+/* Left accent strip per card */
+.stack-card::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  opacity: 0.5;
+}
+
+.card-lang::before { background: #6b6b6b; }
+.card-fw::before  { background: #888; }
+.card-tool::before { background: #aaa; }
+
+/* Corner decoration — same as before */
 .stack-card::after {
   content: '';
   position: absolute;
@@ -155,10 +238,14 @@ layout: page
 }
 
 .stack-icon {
-  font-size: 1.25rem;
-  color: var(--vp-c-text-2);
   margin-bottom: 0.75rem;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+.stack-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  color: var(--vp-c-text-2);
 }
 
 .stack-card h3 {
@@ -188,13 +275,13 @@ layout: page
 
 /* ===== Timeline ===== */
 .timeline {
-  margin: 0 0 4rem;
+  margin: 0;
 }
 
 .tl-item {
   display: flex;
   gap: 1.25rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.75rem;
   position: relative;
 }
 
@@ -205,7 +292,7 @@ layout: page
   top: 2rem;
   bottom: 0;
   width: 1px;
-  background: var(--vp-c-divider);
+  background: linear-gradient(180deg, var(--vp-c-divider) 0%, transparent 100%);
 }
 
 .tl-marker {
@@ -220,6 +307,13 @@ layout: page
   border-radius: 50%;
   background: var(--vp-c-text-2);
   box-shadow: 0 0 0 3px var(--vp-c-bg-soft);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.tl-item.current .tl-dot {
+  background: var(--vp-c-text-1);
+  box-shadow: 0 0 0 4px var(--vp-c-bg-soft), 0 0 0 6px var(--vp-c-divider);
+  transform: scale(1.15);
 }
 
 .tl-body {
@@ -230,6 +324,11 @@ layout: page
   font-size: 0.78rem;
   color: var(--vp-c-text-3);
   letter-spacing: 0.04em;
+}
+
+.tl-item.current .tl-date {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
 }
 
 .tl-body h3 {
@@ -246,7 +345,13 @@ layout: page
   line-height: 1.65;
 }
 
-/* ===== Contact Card ===== */
+/* ===== Contact ===== */
+.contact-hint {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-3);
+  margin: 0 0 1.25rem;
+}
+
 .contact-card {
   display: flex;
   gap: 1rem;
@@ -257,7 +362,7 @@ layout: page
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.85rem 1.25rem;
   border: 1px solid var(--vp-c-border);
   border-radius: 10px;
   color: var(--vp-c-text-2);
@@ -286,12 +391,31 @@ layout: page
   width: 2rem;
   height: 2rem;
   border-radius: 8px;
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-bg);
   flex-shrink: 0;
 }
 
 .contact-icon-box svg {
   width: 1rem;
   height: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 540px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .about-avatar img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .about-bio p {
+    font-size: 0.98rem;
+  }
 }
 </style>
