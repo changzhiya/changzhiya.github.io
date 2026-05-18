@@ -34,6 +34,12 @@ const projects = [
     tags: ['Python', 'PyTorch', 'CLIP', 'Computer Vision'],
     github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
   },
+  {
+    title: '记账 — Android 记账 App',
+    desc: '温馨可爱的纯本地记账应用，支持手动记账、通知自动抓取、分类统计、月度预算及手账风格主题。',
+    tags: ['Kotlin', 'Android', 'Jetpack Compose'],
+    github: 'https://github.com/changzhiya/changzhi-expense-tracker',
+  },
 ]
 </script>
 
@@ -95,8 +101,7 @@ const projects = [
 
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  max-width: 640px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
