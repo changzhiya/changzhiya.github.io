@@ -5,6 +5,8 @@ export default defineConfig({
   title: '我的主页',
   description: '个人主页',
 
+  srcExclude: ['CLAUDE.md', 'docs/**'],
+
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
