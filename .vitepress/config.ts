@@ -5,6 +5,13 @@ export default defineConfig({
   title: 'changzhiya',
   description: '个人主页',
 
+  appearance: 'dark',
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon.svg' }],
+  ],
+
   srcExclude: ['CLAUDE.md', 'docs/**'],
 
   themeConfig: {
