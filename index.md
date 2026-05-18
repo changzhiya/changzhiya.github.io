@@ -22,7 +22,7 @@ hero:
     GitHub
   </a>
   <span class="social-sep">·</span>
-  <a href="mailto:15137091819@163.com" class="social-link">邮箱</a>
+  <a href="mailto:15137091819@163.com" class="social-link">邮箱：15137091819@163.com</a>
 </div>
 
 <div class="scroll-hint">
