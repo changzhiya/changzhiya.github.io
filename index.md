@@ -48,6 +48,8 @@ const projects = [
 
 ## 精选项目
 
+<div class="section-ornament"><span></span></div>
+
 <div class="project-grid">
   <div v-for="p in projects" :key="p.title" class="project-card">
     <h3>{{ p.title }}</h3>
@@ -193,4 +195,31 @@ const projects = [
   color: var(--vp-c-text-1);
   border-bottom-color: var(--vp-c-text-1);
 }
+
+.section-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -0.5rem 0 2rem;
+  opacity: 0.25;
+}
+.section-ornament span {
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: var(--vp-c-text-2);
+  position: relative;
+}
+.section-ornament span::before,
+.section-ornament span::after {
+  content: '';
+  position: absolute;
+  top: -1.5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--vp-c-text-2);
+}
+.section-ornament span::before { left: -10px; }
+.section-ornament span::after { right: -10px; }
 </style>

@@ -76,6 +76,20 @@ const projects = [
   overflow: hidden;
 }
 
+/* 背景装饰圆 */
+.project-block::after {
+  content: '';
+  position: absolute;
+  right: -1.5rem;
+  bottom: -1.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid var(--vp-c-divider);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .project-block::before {
   content: '';
   position: absolute;

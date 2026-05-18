@@ -120,10 +120,32 @@ layout: page
   transition: all 0.25s ease;
 }
 
+.stack-card {
+  position: relative;
+}
+
+.stack-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid var(--vp-c-divider);
+  border-right: 1px solid var(--vp-c-divider);
+  border-radius: 0 12px 0 4px;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
 .stack-card:hover {
   border-color: var(--vp-c-text-3);
   box-shadow: var(--vp-shadow-2);
   transform: translateY(-1px);
+}
+
+.stack-card:hover::after {
+  opacity: 0.5;
 }
 
 .stack-icon {
