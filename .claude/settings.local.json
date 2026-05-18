@@ -1,0 +1,10 @@
+{
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true
+  },
+  "permissions": {
+    "allow": [
+      "Skill(superpowers:brainstorming)"
+    ]
+  }
+}
