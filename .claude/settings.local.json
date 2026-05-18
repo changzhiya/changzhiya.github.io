@@ -11,7 +11,8 @@
       "Bash(curl -v --connect-timeout 10 https://api.github.com/users/changzhiya)",
       "Bash(gh api *)",
       "Bash(gh auth *)",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "WebSearch"
     ]
   },
   "enabledPlugins": {

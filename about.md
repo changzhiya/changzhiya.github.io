@@ -4,38 +4,42 @@ layout: page
 
 # 关于我
 
-<div class="about-intro">
+<div class="about-lead">
   <p>你好！我是一名全栈开发者，专注于计算机视觉、自然语言处理和大语言模型应用。技术栈涵盖 Java 后端开发（Spring Boot）、Python 深度学习（PyTorch）以及微信小程序前端。</p>
 </div>
 
 ## 技术栈
 
-<div class="tech-groups">
-  <div class="tech-group">
+<div class="stack-grid">
+  <div class="stack-card">
+    <div class="stack-icon">&lt;/&gt;</div>
     <h3>语言</h3>
-    <div class="tag-list">
+    <div class="stack-tags">
       <span class="tag">Java</span>
       <span class="tag">Python</span>
       <span class="tag">JavaScript</span>
+      <span class="tag">Kotlin</span>
     </div>
   </div>
-  <div class="tech-group">
+  <div class="stack-card">
+    <div class="stack-icon">&#9636;</div>
     <h3>框架</h3>
-    <div class="tag-list">
+    <div class="stack-tags">
       <span class="tag">Spring Boot</span>
       <span class="tag">PyTorch</span>
       <span class="tag">Vue</span>
-      <span class="tag">微信小程序</span>
+      <span class="tag">Jetpack Compose</span>
     </div>
   </div>
-  <div class="tech-group">
+  <div class="stack-card">
+    <div class="stack-icon">&#9881;</div>
     <h3>工具</h3>
-    <div class="tag-list">
+    <div class="stack-tags">
       <span class="tag">Git</span>
-      <span class="tag">DeepSeek API</span>
+      <span class="tag">Docker</span>
       <span class="tag">CLIP</span>
       <span class="tag">Streamlit</span>
-      <span class="tag">Docker</span>
+      <span class="tag">DeepSeek API</span>
     </div>
   </div>
 </div>
@@ -43,164 +47,217 @@ layout: page
 ## 经历
 
 <div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <span class="time">2024 — 至今</span>
+  <div class="tl-item">
+    <div class="tl-marker"><span class="tl-dot"></span></div>
+    <div class="tl-body">
+      <span class="tl-date">2024 — 至今</span>
       <h3>高级开发工程师</h3>
       <p>负责核心产品功能的开发与维护，主导前端架构设计决策。</p>
     </div>
   </div>
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <span class="time">2022 — 2024</span>
+  <div class="tl-item">
+    <div class="tl-marker"><span class="tl-dot"></span></div>
+    <div class="tl-body">
+      <span class="tl-date">2022 — 2024</span>
       <h3>全栈开发工程师</h3>
       <p>参与 Web 应用和内部工具的全栈开发。</p>
     </div>
   </div>
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <span class="time">2020 — 2022</span>
+  <div class="tl-item">
+    <div class="tl-marker"><span class="tl-dot"></span></div>
+    <div class="tl-body">
+      <span class="tl-date">2020 — 2022</span>
       <h3>初级开发工程师</h3>
       <p>从前端功能开发起步，逐步学习软件工程实践。</p>
     </div>
   </div>
 </div>
 
-## 联系方式
+## 联系
 
-<div class="contact-links">
-  <a href="https://github.com/changzhiya" target="_blank" rel="noopener noreferrer" class="contact-link">
-    <svg class="contact-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.20.82a7.59 7.59 0 0 1 4 0c1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-    GitHub
+<div class="contact-card">
+  <a href="https://github.com/changzhiya" target="_blank" rel="noopener noreferrer" class="contact-item">
+    <span class="contact-icon-box">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.20.82a7.59 7.59 0 0 1 4 0c1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </span>
+    <span>GitHub</span>
   </a>
-  <span class="sep">/</span>
-  <a href="mailto:15137091819@163.com" class="contact-link">邮箱：15137091819@163.com</a>
+  <a href="mailto:15137091819@163.com" class="contact-item">
+    <span class="contact-icon-box">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+    </span>
+    <span>15137091819@163.com</span>
+  </a>
 </div>
 
 <style scoped>
-.about-intro {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: 3rem;
+/* ===== Lead ===== */
+.about-lead {
+  margin: 0 0 4rem;
+}
+
+.about-lead p {
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 2;
   color: var(--vp-c-text-1);
+  max-width: 34rem;
 }
 
-.about-intro p {
-  max-width: 36rem;
-}
-
-.tech-groups {
+/* ===== Stack Grid ===== */
+.stack-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0 0 4rem;
 }
 
-.tech-group h3 {
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-bottom: 0.75rem;
+.stack-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.stack-card:hover {
+  border-color: var(--vp-c-text-3);
+  box-shadow: var(--vp-shadow-2);
+  transform: translateY(-1px);
+}
+
+.stack-icon {
+  font-size: 1.25rem;
   color: var(--vp-c-text-2);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
 }
 
-.tag-list {
+.stack-card h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--vp-c-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.75rem;
+}
+
+.stack-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .tag {
-  font-size: 0.75rem;
-  padding: 0.2rem 0.65rem;
-  border-radius: 5px;
-  background: var(--vp-c-bg-mute);
+  font-size: 0.72rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 6px;
+  background: var(--vp-c-bg);
   color: var(--vp-c-text-2);
   font-weight: 450;
   letter-spacing: 0.02em;
 }
 
+/* ===== Timeline ===== */
 .timeline {
+  margin: 0 0 4rem;
+}
+
+.tl-item {
+  display: flex;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
   position: relative;
-  padding-left: 1.75rem;
-  border-left: 1.5px solid var(--vp-c-divider);
-  margin-bottom: 3rem;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 2.25rem;
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-.timeline-dot {
+.tl-item:not(:last-child)::after {
+  content: '';
   position: absolute;
-  left: -1.835rem;
-  top: 0.35rem;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--vp-c-bg);
-  border: 2px solid var(--vp-c-text-2);
+  left: 0.85rem;
+  top: 2rem;
+  bottom: 0;
+  width: 1px;
+  background: var(--vp-c-divider);
 }
 
-.timeline-content .time {
+.tl-marker {
+  flex-shrink: 0;
+  padding-top: 0.2rem;
+}
+
+.tl-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--vp-c-text-2);
+  box-shadow: 0 0 0 3px var(--vp-c-bg-soft);
+}
+
+.tl-body {
+  flex: 1;
+}
+
+.tl-date {
   font-size: 0.78rem;
   color: var(--vp-c-text-3);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
-.timeline-content h3 {
-  font-size: 0.95rem;
+.tl-body h3 {
+  font-size: 1rem;
   font-weight: 500;
-  margin: 0.2rem 0 0.15rem;
+  margin: 0.2rem 0 0.25rem;
   color: var(--vp-c-text-1);
 }
 
-.timeline-content p {
+.tl-body p {
   font-size: 0.88rem;
   color: var(--vp-c-text-2);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-.contact-icon {
-  width: 1rem;
-  height: 1rem;
-  vertical-align: -0.15rem;
-  margin-right: 0.3rem;
-}
-
-.contact-links {
+/* ===== Contact Card ===== */
+.contact-card {
   display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  font-size: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.contact-link {
-  display: inline-flex;
+.contact-item {
+  display: flex;
   align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
   color: var(--vp-c-text-2);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
 }
 
-.contact-link:hover {
+.contact-item:hover {
+  border-color: var(--vp-c-text-3);
+  box-shadow: var(--vp-shadow-1);
   color: var(--vp-c-text-1);
-  border-bottom-color: var(--vp-c-text-1);
-  text-decoration: none;
+  transform: translateY(-1px);
 }
 
-.contact-links .sep {
-  color: var(--vp-c-divider);
+.contact-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  flex-shrink: 0;
+}
+
+.contact-icon-box svg {
+  width: 1rem;
+  height: 1rem;
 }
 </style>
