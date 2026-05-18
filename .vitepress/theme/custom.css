@@ -163,19 +163,25 @@
 }
 
 /* ===== Page Layout — give content breathing room ===== */
-.VPDoc .content {
-  padding-left: 2rem;
-  padding-right: 2rem;
+/* layout: page 渲染为 .VPPage，不是 .VPDoc */
+.VPPage {
+  padding: 2rem 1.5rem 4rem 2rem;
+  max-width: 780px;
 }
 
+@media (min-width: 768px) {
+  .VPPage {
+    padding: 2rem 2rem 4rem 3rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPPage {
+    padding: 2rem 2rem 4rem 4rem;
+  }
+}
+
+/* 同时保留 .vp-doc 的排版（layout: doc 场景） */
 .VPDoc .content-container {
   max-width: 720px;
-}
-
-/* On wider screens, push content slightly right for better visual balance */
-@media (min-width: 960px) {
-  .VPDoc .content {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
 }
