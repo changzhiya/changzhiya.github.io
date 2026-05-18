@@ -9,7 +9,7 @@ layout: page
     <img src="/avatar.jpg" alt="头像" />
   </div>
   <div class="about-bio">
-    <p>你好！我是一名全栈开发者，专注于计算机视觉、自然语言处理和大语言模型应用。技术栈涵盖 Java 后端开发（Spring Boot）、Python 深度学习（PyTorch）以及微信小程序前端。</p>
+    <p>你好！我是一名软件工程师，毕业于中国矿业大学软件工程专业，目前就职于南京华天。专注于计算机视觉与后端系统开发，技术栈涵盖 Java（Spring Boot）、Python 深度学习（PyTorch）及微信小程序前端。</p>
   </div>
 </div>
 
@@ -65,25 +65,17 @@ layout: page
   <div class="tl-item current">
     <div class="tl-marker"><span class="tl-dot"></span></div>
     <div class="tl-body">
-      <span class="tl-date">2024 — 至今</span>
-      <h3>高级开发工程师</h3>
-      <p>负责核心产品功能的开发与维护，主导前端架构设计决策。</p>
+      <span class="tl-date">2026 — 未来</span>
+      <h3>软件工程师 · 南京华天</h3>
+      <p>从事软件研发工作，聚焦计算机视觉与后端系统方向，在实践中持续精进技术深度与工程能力。</p>
     </div>
   </div>
   <div class="tl-item">
     <div class="tl-marker"><span class="tl-dot"></span></div>
     <div class="tl-body">
-      <span class="tl-date">2022 — 2024</span>
-      <h3>全栈开发工程师</h3>
-      <p>参与 Web 应用和内部工具的全栈开发。</p>
-    </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-marker"><span class="tl-dot"></span></div>
-    <div class="tl-body">
-      <span class="tl-date">2020 — 2022</span>
-      <h3>初级开发工程师</h3>
-      <p>从前端功能开发起步，逐步学习软件工程实践。</p>
+      <span class="tl-date">2022 — 2026</span>
+      <h3>软件工程 · 中国矿业大学</h3>
+      <p>系统学习计算机科学基础、软件架构设计与工程实践，在校期间积累了全栈开发与深度学习项目经验。</p>
     </div>
   </div>
 </div>
