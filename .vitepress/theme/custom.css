@@ -165,7 +165,7 @@
 /* ===== Page Layout ===== */
 /* 内容居中，整体视觉偏左少许 */
 .VPPage {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 2rem 4rem;
 }

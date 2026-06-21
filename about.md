@@ -9,7 +9,7 @@ layout: page
     <img src="/avatar.jpg" alt="头像" />
   </div>
   <div class="about-bio">
-    <p>你好！我是一名软件工程师，毕业于中国矿业大学软件工程专业，目前就职于南京华天。专注于计算机视觉与后端系统开发，技术栈涵盖 Java（Spring Boot）、Python 深度学习（PyTorch）及微信小程序前端。</p>
+    <p>你好！我是一名软件工程师，毕业于中国矿业大学软件工程专业，目前就职于南京华天。专注于计算机视觉与后端系统开发，技术栈涵盖 Java（Spring Boot）、Python 深度学习（PyTorch）、Go、Flutter 及 AI Agent 工具链。</p>
   </div>
 </div>
 
@@ -26,8 +26,10 @@ layout: page
     <div class="stack-tags">
       <span class="tag">Java</span>
       <span class="tag">Python</span>
-      <span class="tag">JavaScript</span>
+      <span class="tag">Go</span>
       <span class="tag">Kotlin</span>
+      <span class="tag">Dart</span>
+      <span class="tag">TypeScript</span>
     </div>
   </div>
   <div class="stack-card card-fw">
@@ -39,7 +41,20 @@ layout: page
       <span class="tag">Spring Boot</span>
       <span class="tag">PyTorch</span>
       <span class="tag">Vue</span>
+      <span class="tag">Flutter</span>
       <span class="tag">Jetpack Compose</span>
+    </div>
+  </div>
+  <div class="stack-card card-ai">
+    <div class="stack-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 11v2a4 4 0 0 1-8 0v-2"/><path d="M5 12H3m18 0h-2"/><circle cx="8" cy="5" r="0.5" fill="currentColor"/><circle cx="16" cy="5" r="0.5" fill="currentColor"/></svg>
+    </div>
+    <h3>AI & Agent</h3>
+    <div class="stack-tags">
+      <span class="tag">Claude Code</span>
+      <span class="tag">DeepSeek</span>
+      <span class="tag">CLIP</span>
+      <span class="tag">Streamlit</span>
     </div>
   </div>
   <div class="stack-card card-tool">
@@ -50,9 +65,7 @@ layout: page
     <div class="stack-tags">
       <span class="tag">Git</span>
       <span class="tag">Docker</span>
-      <span class="tag">CLIP</span>
-      <span class="tag">Streamlit</span>
-      <span class="tag">DeepSeek API</span>
+      <span class="tag">GitHub Actions</span>
     </div>
   </div>
 </div>
@@ -196,6 +209,7 @@ layout: page
 
 .card-lang::before { background: #6b6b6b; }
 .card-fw::before  { background: #888; }
+.card-ai::before  { background: #555; }
 .card-tool::before { background: #aaa; }
 
 /* Corner decoration — same as before */
