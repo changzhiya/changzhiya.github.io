@@ -43,6 +43,7 @@ layout: page
       <span class="tag">Vue</span>
       <span class="tag">Flutter</span>
       <span class="tag">Jetpack Compose</span>
+      <span class="tag">Streamlit</span>
     </div>
   </div>
   <div class="stack-card card-ai">
@@ -64,7 +65,6 @@ layout: page
     <div class="stack-tags">
       <span class="tag">Git</span>
       <span class="tag">Docker</span>
-      <span class="tag">Streamlit</span>
       <span class="tag">GitHub Actions</span>
     </div>
   </div>
