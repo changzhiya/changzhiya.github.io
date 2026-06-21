@@ -54,7 +54,6 @@ layout: page
       <span class="tag">Claude Code</span>
       <span class="tag">DeepSeek</span>
       <span class="tag">CLIP</span>
-      <span class="tag">Streamlit</span>
     </div>
   </div>
   <div class="stack-card card-tool">
@@ -65,6 +64,7 @@ layout: page
     <div class="stack-tags">
       <span class="tag">Git</span>
       <span class="tag">Docker</span>
+      <span class="tag">Streamlit</span>
       <span class="tag">GitHub Actions</span>
     </div>
   </div>
