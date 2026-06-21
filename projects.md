@@ -11,31 +11,56 @@ layout: page
 <script setup>
 const projects = [
   {
-    name: 'RIS — 指代图像分割系统',
-    desc: '文本引导指代图像分割系统，基于 PyTorch 与 OpenAI CLIP，支持 RefCOCO 数据集，提供训练/评估/可视化及 Streamlit 交互推理。',
-    tech: ['Python', 'PyTorch', 'CLIP', 'Computer Vision', 'Streamlit'],
-    github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
+    name: 'Fly 文件传输',
+    desc: '局域网文件传输工具，Go + Vue3 实现手机与电脑之间快速互传文件。支持文件上传/下载/删除、图片/文本/PDF 预览、自动检测局域网 IP、响应式界面适配、单文件部署，单文件最大支持 1GB。',
+    tech: ['Go', 'Vue3', 'Web'],
+    github: 'https://github.com/changzhiya/Fly',
+    icon: 'transfer',
+    features: ['文件传输', '自动 IP 检测', '响应式', '单文件部署'],
   },
   {
-    name: '记账 — 本地 Android 记账 App',
-    desc: '温馨可爱的纯本地记账应用，支持手动记账、微信/支付宝通知自动抓取、分类统计、月度预算、手账风格主题切换及小金库功能。',
-    tech: ['Kotlin', 'Android', 'Jetpack Compose'],
-    github: 'https://github.com/changzhiya/changzhi-expense-tracker',
+    name: '猫猫账本',
+    desc: '可爱的猫咪风格记账应用，支持 AI 智能记账、微信/支付宝账单批量导入、周/月/年数据统计、分类管理、月预算设置与进度提醒。',
+    tech: ['Flutter', 'Dart', 'AI'],
+    github: 'https://github.com/changzhiya/expense-tracker',
+    icon: 'wallet',
+    features: ['AI 智能记账', '账单导入', '数据统计', '预算管理'],
+  },
+  {
+    name: 'AdOut 广告拦截',
+    desc: '纯本地 Android 广告拦截应用，VPN DNS 拦截 + 无障碍服务双层过滤，Aho-Corasick 域名边界匹配精准拦截，DNS-only 省电模式，MagicOS 深度适配，5 层保活机制。',
+    tech: ['Kotlin', 'Android', 'Material3'],
+    github: 'https://github.com/changzhiya/adout',
+    icon: 'shield',
+    features: ['双层拦截', '无需 Root', '精准匹配', '省电优化'],
+  },
+  {
+    name: 'RIS 指代图像分割',
+    desc: '基于 PyTorch 与 OpenAI CLIP 的指代表达图像分割系统，支持 RefCOCO 数据集，提供训练/评估/批量可视化及 Streamlit 交互推理界面。',
+    tech: ['Python', 'PyTorch', 'CLIP', 'CV', 'Streamlit'],
+    github: 'https://github.com/changzhiya/RIS_Referring-Image-Segmentation-System',
+    icon: 'camera',
+    features: ['文本引导分割', 'RefCOCO', '训练评估', '交互推理'],
   },
 ]
+
+const icons = {
+  transfer: '<path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/>',
+  wallet: '<path d="M2 7l10 5 10-5M2 7v10l10 5 10-5V7M2 7l10-5 10 5"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+  camera: '<path d="M6 3h12M12 3v18"/><circle cx="12" cy="9" r="5"/><path d="M8 15c-2.21 0-4 1.79-4 4v1h16v-1c0-2.21-1.79-4-4-4"/>',
+}
 </script>
 
 <div class="project-list">
   <div v-for="p in projects" :key="p.name" class="project-block">
-    <div class="proj-emoji">
-      <!-- microscope icon -->
-      <svg v-if="p.name.includes('RIS')" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12"/><path d="M12 3v18"/><circle cx="12" cy="9" r="5"/><path d="M8 15c-2.21 0-4 1.79-4 4v1h16v-1c0-2.21-1.79-4-4-4"/></svg>
-      <!-- book icon -->
-      <svg v-else viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-    </div>
+    <div class="proj-icon" v-html="icons[p.icon]"></div>
     <div class="proj-body">
       <h2>{{ p.name }}</h2>
       <p>{{ p.desc }}</p>
+      <div class="proj-features">
+        <span v-for="f in p.features" :key="f" class="feature-dot">{{ f }}</span>
+      </div>
       <div class="proj-meta">
         <div class="tags">
           <span v-for="t in p.tech" :key="t" class="tag">{{ t }}</span>
@@ -115,9 +140,7 @@ const projects = [
   opacity: 1;
 }
 
-.proj-emoji {
-  font-size: 2rem;
-  line-height: 1;
+.proj-icon {
   flex-shrink: 0;
   width: 3rem;
   height: 3rem;
@@ -126,6 +149,23 @@ const projects = [
   justify-content: center;
   background: var(--vp-c-bg);
   border-radius: 12px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.proj-icon :deep(svg) {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  color: var(--vp-c-text-2);
+}
+
+.project-block:hover .proj-icon {
+  opacity: 1;
 }
 
 .proj-body {
@@ -147,7 +187,35 @@ const projects = [
   font-size: 0.88rem;
   line-height: 1.75;
   color: var(--vp-c-text-2);
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
+}
+
+/* 特性标签 */
+.proj-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.feature-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--vp-c-text-3);
+  letter-spacing: 0.02em;
+}
+
+.feature-dot::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--vp-c-text-3);
+  opacity: 0.6;
+  flex-shrink: 0;
 }
 
 .proj-meta {
@@ -203,10 +271,9 @@ const projects = [
     padding: 1.5rem;
   }
 
-  .proj-emoji {
+  .proj-icon {
     width: 2.5rem;
     height: 2.5rem;
-    font-size: 1.5rem;
     border-radius: 10px;
   }
 

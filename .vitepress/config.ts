@@ -12,7 +12,7 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon.svg' }],
   ],
 
-  srcExclude: ['CLAUDE.md', 'docs/**'],
+  srcExclude: ['CLAUDE.md', 'README.md', 'docs/**'],
 
   themeConfig: {
     nav: [
